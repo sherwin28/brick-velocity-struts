@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+  <constant name="struts.velocity.manager.classname"
+    value="net.isger.brick.velocity.struts.VelocityManager" />
+
+  <bean type="net.isger.brick.velocity.directive.DirectiveLibrary"
+    name="x" class="net.isger.brick.velocity.directive.DefaultDirectiveLibrary" />
+
+  <package name="brick-default" extends="json-default">
+    <result-types>
+      <result-type name="velocity"
+        class="net.isger.brick.velocity.struts.VelocityResult" default="true" />
+    </result-types>
+  </package>
+</struts>
