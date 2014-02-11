@@ -20,6 +20,7 @@ import com.opensymphony.xwork2.util.ValueStack;
 public class VelocityResult extends
         org.apache.struts2.dispatcher.VelocityResult implements
         VelocityConstants {
+
     private static final long serialVersionUID = -3630891950185638015L;
 
     private LayoutBean layout;

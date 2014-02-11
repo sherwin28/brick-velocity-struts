@@ -9,7 +9,7 @@
   <bean type="net.isger.brick.velocity.directive.DirectiveLibrary"
     name="x" class="net.isger.brick.velocity.directive.DefaultDirectiveLibrary" />
 
-  <package name="brick-default" extends="json-default">
+  <package name="brick-velocity" extends="brick-default">
     <result-types>
       <result-type name="velocity"
         class="net.isger.brick.velocity.struts.VelocityResult" default="true" />

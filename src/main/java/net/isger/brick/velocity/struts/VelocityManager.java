@@ -43,7 +43,7 @@ public class VelocityManager extends
         if (paths != null) {
             props.setProperty(KEY_FILE_PATH, transPath(context, paths));
         }
-        // 自定义指令集
+        // 自定义Brick指令集
         StringBuffer buffer = new StringBuffer(512);
         for (DirectiveLibrary library : this.libraries) {
             List<Class<?>> directives = library.getDirectiveClasses();
